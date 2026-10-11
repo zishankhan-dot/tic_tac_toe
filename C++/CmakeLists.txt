@@ -25,5 +25,12 @@ set(BUILD_GAMES OFF CACHE BOOL "" FORCE)
 # prepare Raylib right now
 FetchContent_MakeAvailable(raylib)
 
-# 8. starting point-> Main.cpp file
-add_executable(TicTacToe src/Main.cpp)
+#target include directories
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
+# starting point-> Main.cpp file
+add_executable(TicTacToe src/Main.cpp src/render.cpp)
+
+
+# target link libraries 
+target_link_libraries(TicTacToe PRIVATE raylib)

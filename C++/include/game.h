@@ -1,0 +1,4 @@
+#pragma ones
+
+
+void getMouse();

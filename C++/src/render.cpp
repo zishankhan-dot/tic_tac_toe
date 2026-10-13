@@ -38,3 +38,12 @@ void drawCircle(Vector2 co_ordinates){
 
 DrawCircleV(co_ordinates,30.0,circleColor); 
 }
+
+
+void drawCross(Vector2 co_ordinates){
+//using Rectangle struct defined in raylib.h library for 4 floats 
+Rectangle shape={co_ordinates.x,co_ordinates.y,crossWidth,crossHeight};
+Vector2 origin={crossWidth/2.0f,crossHeight/2.0f};
+DrawRectanglePro(shape,origin,45,circleColor);
+DrawRectanglePro(shape,origin,135,circleColor);
+}

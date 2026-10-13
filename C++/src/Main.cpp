@@ -27,8 +27,9 @@ drawHorizontalLines(windowSize, gridSize, cellSize);
 if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)){
 Vector2 gridLocation=getMouse();
 //testing circle draw
-drawCircle(gridLocation);
-
+//drawCircle(gridLocation);
+//testing cross draw
+drawCross(gridLocation);
 }
 
 

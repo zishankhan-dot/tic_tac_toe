@@ -25,7 +25,10 @@ drawVerticalLines(windowSize, gridSize, cellSize);
 drawHorizontalLines(windowSize, gridSize, cellSize);
 
 if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)){
-getMouse();
+Vector2 gridLocation=getMouse();
+//testing circle draw
+drawCircle(gridLocation);
+
 }
 
 

@@ -31,3 +31,10 @@ DrawLineEx({0.0f,line},{600.0f,line},5.0,RED);
 
 
 }}
+
+
+// Draw Circle 
+void drawCircle(Vector2 co_ordinates){
+
+DrawCircleV(co_ordinates,30.0,circleColor); 
+}

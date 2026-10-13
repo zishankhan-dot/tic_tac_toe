@@ -1,4 +1,5 @@
-#pragma ones
+#pragma once 
+#include "config.h"
 
 
-void getMouse();
+Vector2 getMouse();

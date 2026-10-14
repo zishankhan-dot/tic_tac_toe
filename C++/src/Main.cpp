@@ -8,6 +8,7 @@
 using namespace std;
 
 
+bool change=false;
 
 int main(){
 
@@ -26,10 +27,9 @@ drawHorizontalLines(windowSize, gridSize, cellSize);
 
 if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)){
 Vector2 gridLocation=getMouse();
-//testing circle draw
-//drawCircle(gridLocation);
-//testing cross draw
-drawCross(gridLocation);
+change?drawCircle(gridLocation):drawCross(gridLocation);
+change=!change;
+
 }
 
 
